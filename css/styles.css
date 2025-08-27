@@ -1192,6 +1192,7 @@ p {
     align-items: center;
     gap: 40px;
     flex-direction: row;
+    margin: 0 auto;
   }
 
   .address-link {
