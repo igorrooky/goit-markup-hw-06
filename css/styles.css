@@ -813,11 +813,11 @@ p {
 
 .mobile-menu {
   position: absolute;
-  top: 16%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 320px;
-  min-height: 640px;
+  width: 100%;
+  height: 100%;
   background-color: var(--dairy);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -922,6 +922,10 @@ p {
     width: 768px;
   }
 
+  img {
+    width: 100%;
+  }
+
   .hdr .container {
     margin: 0 auto;
   }
@@ -943,7 +947,7 @@ p {
   .address-ul {
     flex-direction: column;
     gap: 12px;
-    margin: 16px 0;
+    margin: 0;
   }
 
   .address-link {
@@ -985,9 +989,13 @@ p {
   }
 
   .portfolio-ul {
-    gap: 16px;
-    row-gap: 32px;
+    width: 736px;
+    row-gap: 72px;
     justify-content: space-between;
+  }
+
+  .portfolio-list-li {
+    flex-basis: calc(50% - 12px);
   }
 
   .ftr .container {
@@ -1125,9 +1133,18 @@ p {
     flex-basis: calc((100% - 72px) / 4);
   }
 
+  .portfolio-img {
+    width: 360px;
+  }
+
   .portfolio-ul {
+    width: 1158px;
     gap: 24px;
     row-gap: 48px;
+  }
+
+  .portfolio-list-li {
+    flex-basis: calc((100% - 48px) / 4);
   }
 
   .ftr .container {
